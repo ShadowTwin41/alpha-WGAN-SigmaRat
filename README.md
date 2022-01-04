@@ -5,6 +5,7 @@
     
   <p> <li> Collaboration between Centro Algoritmi, University of Minho, Braga, Portugal and Université Paris-Saclay, CEA, CNRS, BAOBAB, NeuroSpin, 91191 Gif-sur-Yvette, France <br>
       
+      
 <blockquote>This project is the result of André Ferreira (a81350@alunos.uminho.pt), Victor Alves (valves@di.uminho.pt), Ricardo Magalhães (ricardo.lazarus@gmail.com) and Sébastien Mériaux (sebastien.meriaux@cea.fr) work, having been developed as part of André Ferreira's master thesis in Biomedical Engineering, Medical Informatics Branch from University of Minho. </blockquote>
 
     Official Pytorch Implementation of "Generation of Synthetic Rat Brain MRI scans with a 3D Enhanced Alpha-GAN"

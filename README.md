@@ -76,13 +76,13 @@ The new loss functions and normalisation layer used in this work are described b
       
 This architecture was called αWGANSigmaRat1. The loss functions used to train this model were the same as those used for the α-WGAN\_ADNI model, except for the generator, for which a new loss function was introduced (5): 
 
-![eq5](./Images/eq5.jpg)
+![eq5](./Images/eq5.JPG)
 
 For this training process, all previously mentioned conventional data augmentations (zoom, rotation, Gaussian noise, flip, translation and scaling intensity) as well as the Adam optimiser and a random vector size of 500 were used. 
 
 The last proposed model architecture is shown in Figure 5. The main changes compared to the α-WGANSigmaRat1 architecture were the removal of SN after each convolution only in the generator and encoder, since in the original work by Miyato et al. (2018)  the SN was created to stabilise the training of the discriminator. The instance normalisation layers were also removed in the discriminator and in the code discriminator to avoid artefacts and reduce computational costs. In the new loss function (6), the L1 loss function was replaced by the Gradient Difference Loss (GDL) , which is described in the latest works on super-resolution:
 
-![eq6](./Images/eq6.jpg)
+![eq6](./Images/eq6.JPG)
       
 | ![fig5](./Images/fig6.jpg) |
 |:--:|

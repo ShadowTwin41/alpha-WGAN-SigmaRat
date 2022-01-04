@@ -94,3 +94,17 @@ The loss functions used to train this model were (3) for the code discriminator,
 All conventional data augmentations were performed, the size of the input random vector was 500, and a new optimiser was used, AdamW with a learning rate of 0.0002, betas of 0.9, 0.999, eps of 10<sup>-8</sup> and a weight decay of 0.01. The AdamW is known to have a more stable weight decay than the Adam. This architecture was named α-WGANSigmaRat2.
 
 The difference between the synthesis of rat and human MRI brains is the resolution of the input scans. Here, scans with a resolution of 64x64x40 were used, but nowadays (with the arrival of better GPUs) it is possible to process scans with higher resolutions (e.g. 256x256x256). Since an alpha-GAN architecture with new loss functions and a special normalisation (SN) is used, the training can be performed with human MRI scans without much difference, except for the longer runtime.
+      
+      
+## Citation
+If you find our research useful, please cite our work.
+```  
+@misc{ferreira2022generation,
+      title={Generation of Synthetic Rat Brain MRI scans with a 3D Enhanced Alpha-GAN}, 
+      author={André Ferreira and Ricardo Magalhães and Sébastien Mériaux and Victor Alves},
+      year={2022},
+      eprint={2112.13626},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
+```  

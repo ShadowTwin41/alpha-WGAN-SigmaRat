@@ -99,12 +99,14 @@ The difference between the synthesis of rat and human MRI brains is the resoluti
 ## Citation
 If you find our research useful, please cite our work.
 ```  
-@misc{ferreira2022generation,
-      title={Generation of Synthetic Rat Brain MRI scans with a 3D Enhanced Alpha-GAN}, 
-      author={André Ferreira and Ricardo Magalhães and Sébastien Mériaux and Victor Alves},
-      year={2022},
-      eprint={2112.13626},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@article{ferreira2022generation,
+  title={Generation of Synthetic Rat Brain MRI Scans with a 3D Enhanced Alpha Generative Adversarial Network},
+  author={Ferreira, Andr{\'e} and Magalh{\~a}es, Ricardo and M{\'e}riaux, S{\'e}bastien and Alves, Victor},
+  journal={Applied Sciences},
+  volume={12},
+  number={10},
+  pages={4844},
+  year={2022},
+  publisher={MDPI}
 }
 ```  

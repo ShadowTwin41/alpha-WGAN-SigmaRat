@@ -10,24 +10,7 @@ from torch.nn.utils import spectral_norm as SN
 #Encoder and Discriminator has same architecture (not anymore)
 #***********************************************
 
-'''
-Base architecture->Model_alphaWGAN.py
-######################################--Improvements--######################################
-#Instead of use BatchNorm3d, It is used InstanceNorm3d
-#Application of Spectral Normalization (SN) after each convolution
 
-##Next implementation
-### Another change (based on SN-GAN) -> Only use spectral normalization (SN) in the Discriminator (remove from generator) #done
-### following this logic, a encoder class should be done to be possible to use batch normalization and spectral normalization in the discriminator #done
-
-Maybe remove de batch normalization (all normalizations in discriminator) (less GPU memory consume and avoid some artifacts) just leave SN. #done
-
-
-
-TODO next mmGANBased4:
-#change the InstanceNorm3d in the Discriminator to layer normalization https://arxiv.org/pdf/2003.01217.pdf
-
-'''
 class Discriminator(nn.Module):
     def __init__(self, channel=512,out_class=1,is_dis =True):
         super(Discriminator, self).__init__()

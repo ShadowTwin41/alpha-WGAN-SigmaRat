@@ -10,14 +10,7 @@ from torch.nn.utils import spectral_norm as SN
 #Encoder and Discriminator has same architecture
 #***********************************************
 
-'''
-Base architecture->Model_alphaWGAN.py
-######################################--Improvements--######################################
-#Instead of use BatchNorm3d, It is used InstanceNorm3d
-#Application of Spectral Normalization (SN) after each convolution (based on https://arxiv.org/pdf/1802.05957.pdf)
 
-treinar para vetores de tamanho 1000 também, para comparar.
-'''
 class Discriminator(nn.Module):
     def __init__(self, channel=512,out_class=1,is_dis =True):
         super(Discriminator, self).__init__()
